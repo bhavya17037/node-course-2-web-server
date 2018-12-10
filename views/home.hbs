@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home page</title>
+</head>
+
+<body>
+    {{> header}}
+    <br />
+    <p>Name is {{name}}</p>
+    <br />
+    <p>Things {{name}} likes are: </p> <br />
+    {{#each likes}}
+    <li>
+        <ol>{{this}}</ol>
+    </li>
+    {{/each}}
+
+    {{> footer}}
+</body>
+
+</html>
